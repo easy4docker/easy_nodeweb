@@ -19,7 +19,7 @@
                         </form>
                     </div>
                     <div class="col-8 p-6 m-0 text-center">
-                            <h1 class="mt-3">Vue.JS A SPA Service v1 {{ $parent.vueRootCommon.solution }}</h1>
+                            <h1 class="mt-3">Vue.JS A SPA Service v1.0 {{ $parent.vueRootCommon.solution }}</h1>
                     </div>
                     <div class="col-2 p-0 m-0 text-right">
                         <!--a class="btn btn-sm btn-success m-1 pull-right" href="JavaScript:void(0)" v-on:click="loadForm()">
