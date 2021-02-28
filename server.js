@@ -38,7 +38,7 @@ app.all('*', function(req, res, next) {
 var RESTS = 'get|put|post|delete'.split('|');
 
 for (var i=0 ; i < RESTS.length; i++) {
-    (function() {
+    (function(i) {
         app[RESTS[i]](/(.+)$/i, (req, res) => {
             var ROUTER = pkg.require(__dirname + '/modules/appRouter.js');
             var appRoute = new ROUTER(env, pkg, req, res);
