@@ -8,4 +8,4 @@ docker container stop <%=@siteContainer %> > /dev/null 2>&1
 
 docker container rm <%=@siteContainer %> > /dev/null 2>&1
 
-docker run -d <%=@cmdPorts  %> -v "<%=@dockerCodePath%>":/var/_localApp -v "<%=@dockerDataPath%>":/var/_localAppData -v "<%=@dockerEnvPath%>":/var/_localAppEnv --network network_easydocker --name <%=@siteContainer %>  <%=@siteImage %>
+docker run -d <%=@cmdPorts  %> -v "<%=@shareFolder %>":/var/_shareFolder -v "<%=@dockerCodePath%>":/var/_localApp -v "<%=@dockerDataPath%>":/var/_localAppData -v "<%=@dockerEnvPath%>":/var/_localAppEnv --network network_easydocker --name <%=@siteContainer %>  <%=@siteImage %>
