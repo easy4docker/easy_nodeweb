@@ -9,9 +9,11 @@
 			const dirn = '/var/_shareFolder';
 			fs.readdir(dirn, (err, files) => {
 				if (files.length) {
+					cbk(files);
+					/*
 					fs.readdir(dirn + '/' + files[0], (err, content) => {
 						cbk((err)?err.message : content);
-					});
+					});*/
 				} else {
 					cbk(files)
 				}
