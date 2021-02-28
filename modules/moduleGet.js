@@ -6,8 +6,15 @@
 			me.showShareFolder(cbk);
 		}
 		me.showShareFolder = (cbk) => {
-			fs.readdir('/var/_shareFolder', (err, files) => {
-			  cbk(files);
+			const dirn = '/var/_shareFolder';
+			fs.readdir(dirn, (err, files) => {
+				if (files.length) {
+					fs.readFile(dirn + '/' + files[0], 'utf8', (err, content) => {
+						cbk(content);
+					});
+				} else {
+					cbk(files)
+				}
 			});
 		}
 	};
