@@ -4,7 +4,7 @@
 		    me = this;
 		
 		me.call = function(rest, incomeData, callback) {
-			callback({rest: 'rest', incomeData: incomeData, dir: __dirname, env : env });
+			callback({rest: rest, incomeData: incomeData, dir: __dirname, env : env });
 		};	
 	};
 	if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
