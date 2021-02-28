@@ -6,7 +6,7 @@
 			me.showShareFolder(cbk);
 		}
 		me.showShareFolder = (cbk) => {
-			fs.readdir('/var/shareFolder', (err, files) => {
+			fs.readdir('/var/_shareFolder', (err, files) => {
 			  cbk(files);
 			});
 		}
