@@ -4,8 +4,8 @@
 		    me = this;
 		
 		me.call = function(rest, incomeData, callback) {
-			let REST_Module = pkg.require(__dirname + '/moduleGet.js.js');
-			let getm = new REST_Module(env, pkg);
+			let REST_MODULE = pkg.require(__dirname + '/moduleGet.js');
+			let getm = new REST_MODULE(env, pkg);
 			getm.run(incomeData.path, callback);
 			// callback({rest: rest, incomeData: incomeData, dir: __dirname, env : env });
 		};	
