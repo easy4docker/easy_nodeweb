@@ -2,10 +2,10 @@
 	var obj =  function (env, pkg) {
 		let fs = require('fs');
 		let me = this;
-		me.run = (path, cbk) {
+		me.run = (path, cbk) => {
 			me.showShareFolder(cbk);
 		}
-		me.showShareFolder = (cbk) {
+		me.showShareFolder = (cbk) => {
 			cbk('showShareFolder-->');
 
 		}
