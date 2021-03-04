@@ -8,7 +8,7 @@
                             <div class="form-group">
                                 <!--label>Select</label-->
                                 <select class="form-control mt-6" :required="true" @change="onSelect($event)" v-model="form.branch">
-                                    <option value="" :selected="form.branch === ''" >Select a solution</option>
+                                    <option value="" :selected="form.branch === ''" >Select == solution</option>
                                     <option 
                                     v-for="option in branches" 
                                     v-bind:value="option.k"
