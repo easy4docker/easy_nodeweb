@@ -19,7 +19,7 @@
                         </form>
                     </div>
                     <div class="col-8 p-6 m-0 text-center">
-                            <h1 class="mt-3">VUE.JS demo : onDemand Cron Solution {{ $parent.vueRootCommon.solution }}</h1>
+                            <h1 class="mt-3">Dev Branch {{ $parent.vueRootCommon.solution }}</h1>
                     </div>
                     <div class="col-2 p-0 m-0 text-right">
                     </div>
